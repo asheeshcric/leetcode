@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         graph = self.buildGraph(isConnected)
@@ -38,4 +36,5 @@ class Solution:
                     graph[node].add(other_node)
                     
         return graph
+            
             
